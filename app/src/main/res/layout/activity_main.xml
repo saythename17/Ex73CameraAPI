@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+<!--    카메라에서 취득된 정보를 보여주는 뷰(미리보기 뷰)를 개발자가 직접만들기 -->
+    <com.icandothisallday2020.ex73cameraapi.MyCameraView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="take a picture"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickBtn"/>
+<!--    캡쳐한 사진 보여주는 이미지뷰-->
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
